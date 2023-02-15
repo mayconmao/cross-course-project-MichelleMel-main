@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
   <head>
     <title>My first website</title>
@@ -9,5 +9,108 @@
     <h2>Web Security</h2>
     <p id="web-security-question">How would you advise a potential client to secure his/her website from web security attacks? Note: the word count for your answer should not be greater than 250 words</p>
     <p id="web-security-answer">[Answer here]</p>
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0"
+    />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styled.css" />
+    <title>Anonymous Cinephiles</title>
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo"><img src="assets/log.png" /></a>
+      <ul class="navigation">
+        <li class="active"><a href="#">Featured</a></li>
+        <li class="list"><a href="#">Popular</a></li>
+        <li class="list"><a href="#">All Categories</a></li>
+        <li class="list"><a href="#">Top Week</a></li>
+        <li class="list"><a href="#">About</a></li>
+        <div class="indicator"></div>
+        <div class="separator"></div>
+        <li class="register"><a href="#">LOGIN</a></li>
+        <li class="register"><a href="#">REGISTER</a></li>
+      </ul>
+
+      <ul></ul>
+    </header>
+    <a class="play" onclick="toggleVideo()"
+      >Watch<img src="assets/play.svg" />Trailer</a
+    >
+    <div class="banner">
+      <img src="assets/banner.png" class="bg" />
+
+      <div class="content">
+        <h3>Vivamus sit amet interdum elit</h3>
+        <h1>Mancing Mania The Movie</h1>
+        <h3>On the air 01 . 11 . 20</h3>
+      </div>
+    </div>
+
+    <div class="trailer">
+      <video src="assets/video.mp4" controls="true"></video>
+      <img src="assets/close.svg" class="close" onclick="toggleVideo()" />
+    </div>
+
+    <div class="carousel">
+      <button class="btn-arrow btn-arrow-left">
+        <img src="assets/left.svg" alt="left arrow" />
+      </button>
+      <button class="btn-arrow btn-arrow-right">
+        <img src="assets/right.svg" alt="right arrow" />
+      </button>
+      <div class="inner">
+        <ul class="container">
+          <li class="slide slide-1">
+            <div class="carouseltext">
+              <span>Vivamus sit amet</span>
+              <h1>The Lorem Ipsum Dolor Sit Amet</h1>
+              <div class="star">
+                <img src="assets/star.svg" alt="star rating" />
+                <img src="assets/star.svg" alt="star rating" />
+                <img src="assets/star.svg" alt="star rating" />
+                <img src="assets/star.svg" alt="star rating" />
+                <img src="assets/star.svg" alt="star rating" />
+                <span> 5.0</span>
+                <span>|</span>
+                <span>2h 13m</span>
+              </div>
+              <span>Drama, Action and Adventure</span>
+              <div class="buttontrailer">
+                <a class="playcarousel" onclick="toggleVideo()">
+                  Watch Trailer
+                </a>
+                <a class="buttoncarousel" onclick="toggleVideo()">
+                  Watch Full Movie
+                </a>
+              </div>
+            </div>
+            <div class="carouselimage">
+              <img src="assets/avatar.png" alt="" />
+            </div>
+          </li>
+          <li class="slide slide-2">
+            <h1>SLIDE 2</h1>
+          </li>
+          <li class="slide slide-3">
+            <h1>SLIDE 3</h1>
+          </li>
+        </ul>
+      </div>
+      <div class="dots"></div>
+    </div>
+    <script src="js/script.js"></script>
   </body>
 </html>
